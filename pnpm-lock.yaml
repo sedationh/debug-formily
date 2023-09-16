@@ -14,6 +14,9 @@ dependencies:
   '@formily/react':
     specifier: ^2.2.29
     version: 2.2.29(@types/react-dom@18.2.7)(@types/react@18.2.20)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(typescript@5.1.6)
+  '@formily/reactive':
+    specifier: ^2.2.29
+    version: 2.2.29
   '@formily/reactive-react':
     specifier: ^2.2.29
     version: 2.2.29(@types/react-dom@18.2.7)(@types/react@18.2.20)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
