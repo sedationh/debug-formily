@@ -1,5 +1,11 @@
+import FormilyPage from "./pages/FormilyPage"
+
 function App() {
-  return <>This is App</>;
+  return (
+    <>
+      <FormilyPage />
+    </>
+  )
 }
 
-export default App;
+export default App
