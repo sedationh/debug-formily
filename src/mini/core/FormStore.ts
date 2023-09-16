@@ -1,5 +1,6 @@
 import { define, observable } from "@formily/reactive"
 import { FieldStore } from "./FieldStore"
+import { batchSubmit } from "./internal"
 
 export class FormStore {
   props
@@ -37,7 +38,6 @@ export class FormStore {
   onUnmount() {}
 
   submit = (onSubmit) => {
-    onSubmit?.(this.values)
-    return Promise.resolve()
+    return batchSubmit(this, onSubmit)
   }
 }

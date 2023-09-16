@@ -51,11 +51,11 @@ export default function RegisterPage() {
           onSubmit={(res) => {
             console.log(res) //sy-log
           }}
-          onSubmitSuccess={() => {
-            console.log("omg success") //sy-log
+          onSubmitSuccess={(...args) => {
+            console.log("omg success", args) //sy-log
           }}
-          onSubmitFailed={() => {
-            console.log("omg failed") //sy-log
+          onSubmitFailed={(...args) => {
+            console.log("omg failed", args) //sy-log
           }}
           onClick={() => {}}
         >
