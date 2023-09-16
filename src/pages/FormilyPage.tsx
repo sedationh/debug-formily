@@ -1,7 +1,6 @@
 import { createForm } from "@formily/core"
 import { FormProvider, FormConsumer, Field } from "@mini/react"
 import { FormItem, Input, Submit } from "@mini/antd"
-// import { FormItem, Input, Submit } from "@formily/antd"
 
 const form = createForm()
 
