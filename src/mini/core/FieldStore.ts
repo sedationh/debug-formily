@@ -1,3 +1,5 @@
+import { define, observable } from "@formily/reactive"
+
 export class FieldStore {
   name
   component
@@ -14,11 +16,19 @@ export class FieldStore {
     this.name = props.name
     this.form = formStore
     this.value = this.form.values[this.name]
+    this.form.fields[this.name] = this
+
+    this.makeObservable()
+  }
+
+  makeObservable = () => {
+    define(this, {
+      value: observable,
+    })
   }
 
   onInput = (e) => {
     const newValue = e.target.value
-    console.log("%c seda - [ newValue ]-21-「FieldStore」", "font-size:13px; background:pink; color:#bf2c9f;", newValue)
 
     this.value = newValue
     this.form.values[this.props.name] = newValue
