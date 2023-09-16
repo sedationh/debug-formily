@@ -9,7 +9,7 @@ const form = createForm({
 })
 
 const createPasswordEqualValidate = (equalName) => (field) => {
-  if (form.values.confirmPassword && field.value && form.values[equalName] !== field.value) {
+  if (!form.values["equalName"] && field.value && form.values[equalName] !== field.value) {
     field.selfErrors = ["Password does not match Confirm Password."]
   } else {
     field.selfErrors = []
