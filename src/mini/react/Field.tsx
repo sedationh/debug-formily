@@ -1,6 +1,6 @@
 import { createElement, useContext } from "react"
 import { FieldContext, FormContext } from "./context"
-import { observer } from "@formily/reactive-react"
+import { observer } from "@mini/reactive-react"
 
 const Field = observer((props: any) => {
   const form = useContext(FormContext)

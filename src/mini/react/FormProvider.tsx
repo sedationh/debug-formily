@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { FormContext } from "./context"
-import { observer } from "@formily/reactive-react"
+import { observer } from "@mini/reactive-react"
 
 const FormProvider = observer(({ form, children }: any) => {
   useEffect(() => {

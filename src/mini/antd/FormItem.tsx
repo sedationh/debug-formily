@@ -1,4 +1,4 @@
-import { observer } from "@formily/reactive-react"
+import { observer } from "@mini/reactive-react"
 import { FieldContext } from "@mini/react"
 import { useContext } from "react"
 

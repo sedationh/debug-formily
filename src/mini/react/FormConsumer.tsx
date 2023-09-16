@@ -1,4 +1,4 @@
-import { observer } from "@formily/reactive-react"
+import { observer } from "@mini/reactive-react"
 import { useForm } from "./hooks"
 
 const FormConsumer = observer(({ children }: any) => {

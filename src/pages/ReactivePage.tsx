@@ -7,7 +7,6 @@ const obj = observable({
 })
 
 const ReactivePage = observer(() => {
-
   return (
     <div>
       <Button
