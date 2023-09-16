@@ -1,5 +1,5 @@
 import { createForm } from "@formily/core"
-import { Field, FormConsumer, FormProvider } from "@formily/react"
+import { Field, FormConsumer, FormProvider } from "@mini/react"
 import { FormItem, Input, Submit } from "@mini/antd"
 
 

@@ -1,11 +1,11 @@
 import { createForm } from "@formily/core"
-import { FormProvider, FormConsumer, Field } from "@formily/react"
+import { FormProvider, FormConsumer, Field } from "@mini/react"
 import { FormItem, Input, Submit } from "@mini/antd"
 // import { FormItem, Input, Submit } from "@formily/antd"
 
 const form = createForm()
 
-const FormilyPage = (props) => {
+const FormilyPage = () => {
   return (
     <div>
       <h3>FormilyPage</h3>
@@ -27,7 +27,7 @@ const FormilyPage = (props) => {
           component={[Input]}
         />
         <FormConsumer>
-          {() => (
+          {(form) => (
             <div
               style={{
                 marginBottom: 20,

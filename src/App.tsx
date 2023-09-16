@@ -4,8 +4,8 @@ import RegisterPage from "./pages/RegisterPage"
 function App() {
   return (
     <>
-      <FormilyPage />
-      {/* <RegisterPage /> */}
+      {/* <FormilyPage /> */}
+      <RegisterPage />
     </>
   )
 }

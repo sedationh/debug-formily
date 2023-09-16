@@ -1,16 +1,27 @@
-import { useForm } from "@formily/react"
+import { useForm } from "@mini/react"
+import { Button } from "antd"
 
 // https://antd.formilyjs.org/zh-CN/components/submit
-const Submit = ({ children, onSubmit, onSubmitSuccess, onSubmitFailed, onClick }) => {
+const Submit = ({
+  children,
+  onSubmit,
+  onSubmitSuccess,
+  onSubmitFailed,
+  onClick,
+}: {
+  children: any
+  onSubmit?: any
+  onSubmitSuccess?: any
+  onSubmitFailed?: any
+  onClick?: any
+}) => {
   // 获取form表单
   const form = useForm()
   return (
-    <button
+    <Button
       onClick={(e) => {
-        if (onClick) {
-          if (onClick(e) === false) {
-            return
-          }
+        if (onClick?.(e) === false) {
+          return
         }
         if (onSubmit) {
           form.submit(onSubmit).then(onSubmitSuccess).catch(onSubmitFailed)
@@ -18,7 +29,7 @@ const Submit = ({ children, onSubmit, onSubmitSuccess, onSubmitFailed, onClick }
       }}
     >
       {children}
-    </button>
+    </Button>
   )
 }
 
