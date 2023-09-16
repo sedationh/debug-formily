@@ -1,9 +1,12 @@
-import { createForm } from "@formily/core"
+import { createForm } from "@mini/core"
 import { Field, FormConsumer, FormProvider } from "@mini/react"
 import { FormItem, Input, Submit } from "@mini/antd"
 
-
-const form = createForm()
+const form = createForm({
+  initialValues: {
+    name: "hi",
+  } as any,
+})
 
 const createPasswordEqualValidate = (equalName) => (field) => {
   if (form.values.confirmPassword && field.value && form.values[equalName] !== field.value) {

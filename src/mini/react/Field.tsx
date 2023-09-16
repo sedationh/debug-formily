@@ -8,7 +8,8 @@ const Field = observer((props: any) => {
 
   const component = createElement(field.component[0], {
     ...field.component[1],
-    value: field.value,
+    // 传入 "" 是为了变为受控
+    value: field.value || "",
     onChange: field.onInput,
   })
 

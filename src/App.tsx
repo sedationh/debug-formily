@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       {/* <FormilyPage /> */}
-      {/* <RegisterPage /> */}
-      <ReactivePage />
+      <RegisterPage />
+      {/* <ReactivePage /> */}
     </>
   )
 }
